@@ -1,0 +1,27 @@
+# Health Care Equipment & Supplies — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/Health_Care_Equipment_and_Supplies_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the HEALTH CARE EQUIPMENT & SUPPLIES industry to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for the surgeon-and-institution switching-cost moats that make medical-device businesses unusually durable, the structural difference between high-margin innovative-device businesses and lower-margin commodity-supply businesses, the FDA approval pathway and how it shapes risk and competitive position, and the recurring revenue economics of consumables-driven device platforms.
+
+What to attend to particularly for Health Care Equipment & Supplies. The industry's defining feature is institutional and surgeon-level switching costs that produce some of the most durable moats outside software. (1) Innovative medical devices — Medtronic, Stryker, Boston Scientific, Edwards Lifesciences, Intuitive Surgical, Abbott Laboratories' device businesses, Becton Dickinson, Baxter International, Zimmer Biomet, Penumbra, Inspire Medical Systems, Insulet, DexCom. Cardiology, orthopedic implants, surgical robotics, neuromodulation, diabetes devices each have distinct competitive structures. The Intuitive Surgical da Vinci system is the canonical case study — recurring revenue from instruments and services on the installed base of robots, surgeon-training switching costs (a hospital's da Vinci-trained surgeons cannot quickly switch to a competing platform), and category-leadership moats. (2) Diagnostic equipment and supplies — Thermo Fisher (also Life Sciences Tools), Danaher, Abbott (diagnostics piece), Roche Diagnostics, Becton Dickinson, Hologic. Razor-and-blade economics (place a diagnostic instrument in a lab, then earn recurring revenue from reagent and consumable sales for a decade). (3) Consumer-facing health products — Procter & Gamble's healthcare piece, Kenvue (the 2023 Johnson & Johnson consumer-health spin), Haleon (the GSK consumer-health spin), Reckitt's healthcare brands. Branded OTC, allergy, pain relief — closer to consumer products than to medical devices. (4) Specialty and commodity supplies — Cardinal Health, McKesson, Henry Schein (medical/dental distribution), Patterson Companies (dental). Distribution-and-density businesses. (5) Dialysis — DaVita, Fresenius Medical Care. Specialty service-and-supplies hybrid. The FDA approval pathway differs by device class (Class I devices clear quickly, Class III high-risk implants undergo PMA reviews of 1–3 years), and a competitor's FDA timing can shape pricing power for years. The wisdom-tradition references are sparse for this industry; Buffett has rarely owned medical-device companies (the brief J&J position is a partial exception); Pat Dorsey's Little Book treats medical devices explicitly as a switching-cost-moat sector with worked examples; Damodaran's healthcare data is the canonical academic reference. The single most useful frame: distinguish the innovative platform-with-recurring-consumables businesses (Intuitive, Edwards, DexCom, Insulet) from the commodity supply-and-distribution businesses (Cardinal, McKesson) — they have very different return-on-capital profiles and require different mental models.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. The FDA's Medical Device approvals database (Premarket Approvals and 510(k) clearances; free). The Centers for Medicare & Medicaid Services (CMS) for reimbursement-rate context. AdvaMed (Advanced Medical Technology Association) for industry-level data. Damodaran's healthcare-equipment data. Pat Dorsey's Little Book on switching-cost moats with medical-device worked examples. Specific industry trade press — MedTech Dive, MD+DI, FierceBiotech.
+
+Length: 3,500–5,000 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Health Care Equipment & Supplies businesses in general. Don't analyze any specific company as an investment.
+```

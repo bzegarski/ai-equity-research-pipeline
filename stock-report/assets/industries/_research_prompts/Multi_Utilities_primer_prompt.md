@@ -1,0 +1,27 @@
+# Multi-Utilities — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/Multi_Utilities_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the MULTI-UTILITIES industry — combined electric, gas, and water utility holding companies — to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for the rate-base / allowed-ROE economics shared with pure electric and pure gas utilities, the diversification benefits of combining electric and gas regulatory exposures across multiple jurisdictions, and the specific operational and regulatory complexities of integrated multi-state utilities (PG&E's wildfire liability is the canonical recent cautionary case).
+
+What to attend to particularly for Multi-Utilities. The industry's defining feature is operational and regulatory diversification across multiple regulated utility businesses (electric + gas + sometimes water + sometimes pipeline) and across multiple state regulatory jurisdictions. The diversification can produce smoother earnings than pure-play utilities, but it also concentrates the holding company in jurisdictions with potentially correlated regulatory or operational risks (climate-driven wildfire exposure on the West Coast; offshore wind project risk in the Northeast). The canonical names — Sempra Energy (California electric and gas plus Mexico operations plus LNG export), PG&E Corporation (California; the canonical wildfire-liability case study, with the 2017–19 Camp Fire and Tubbs Fire bankruptcy and post-bankruptcy rebuild), Dominion Energy (Virginia electric plus regulated gas plus regulated transmission), DTE Energy (Michigan electric and gas), CenterPoint Energy (Texas / Louisiana / Indiana electric, gas, and pipelines), Ameren (Missouri / Illinois electric and gas), Black Hills Corporation (mountain-state electric and gas), MGE Energy (Wisconsin electric and gas), NiSource (Indiana / Pennsylvania / Virginia / Ohio gas plus Indiana electric), Avangrid (Northeastern electric and gas; subsidiary of Iberdrola Spain), New Jersey Resources, OGE Energy. The five operational questions are the same as for pure electric or pure gas utilities (rate-base growth, earned ROE vs allowed ROE, capex / depreciation, FFO / debt, dividend payout ratio); the additional question for multi-utilities is the segment-level disclosure quality (some multi-utilities provide clear segment-level rate-base, ROE, and capex data; others obfuscate; the difference matters for analytical clarity). The PG&E case (the 2017 wildfires plus 2018 Camp Fire produced $30B+ in liability claims and a Chapter 11 filing 2019–20; the 2020 emergence and 2024–25 ongoing wildfire-liability monitoring) is the canonical recent multi-utility cautionary case study and worth detailed treatment in any thoughtful primer. Wisdom-tradition references — Buffett's Berkshire Hathaway Energy is structurally a multi-utility (electric in Iowa / Nevada / Pacific Northwest, gas distribution, pipeline) and the Berkshire-letter commentary applies. Pat Dorsey on regulated-monopoly moats. The single most useful frame: multi-utilities share the regulated rate-base economics with pure-play utilities but require the analyst to assess regulatory diversification quality, segment-level transparency, and concentrated operational risk exposures (especially climate-driven exposures in California and other Western states).
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. Buffett's Berkshire Hathaway Energy commentary. Edison Electric Institute (eei.org) for rate-case mechanics. The American Gas Association (AGA). NARUC for state-regulatory data. Damodaran's multi-utilities data. The PG&E 2017–2020 bankruptcy court filings as the canonical worked example for the wildfire-liability framework. Specific industry trade press — Public Utilities Fortnightly, Utility Dive.
+
+Length: 3,500–5,000 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Multi-Utilities businesses in general. Don't analyze any specific company as an investment.
+```

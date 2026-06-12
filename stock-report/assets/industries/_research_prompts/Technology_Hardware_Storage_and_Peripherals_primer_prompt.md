@@ -1,0 +1,27 @@
+# Technology Hardware, Storage & Peripherals — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/Technology_Hardware_Storage_and_Peripherals_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the TECHNOLOGY HARDWARE, STORAGE & PERIPHERALS industry — Apple, HP, Dell, NetApp, Pure Storage, Western Digital, peripherals — to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for why Buffett's Apple position is the wisdom-tradition's most important contemporary engagement with technology hardware (and why it is fundamentally a consumer-brand position rather than a tech position), the structurally distinct economics of consumer hardware (Apple) vs enterprise hardware (Dell, HP Enterprise) vs storage and peripherals (a more cyclical, lower-margin world), and the AI-server demand wave reshaping enterprise hardware in 2024–25.
+
+What to attend to particularly for Technology Hardware, Storage & Peripherals. The industry's defining feature is the bifurcation between Apple-as-consumer-brand-franchise and the rest of the industry. (1) Apple — by far the largest by market cap, with a structurally different business model from any other listed hardware company. Apple's economic engine is the integrated hardware-and-software-and-services ecosystem with extraordinary switching costs at the consumer level (data, apps, accessories, family-of-five Apple Music subscriptions, Apple Watch + iPhone interoperability), premium pricing power, and the Services segment ($85B+ revenue at high margins) that has compounded faster than the iPhone since 2015. Buffett's Apple position (purchased 2016 onward; ~5–6% of Apple by 2018; trimmed materially 2024) is the canonical wisdom-tradition contemporary engagement with technology hardware. The 2016, 2017, 2020, 2022, 2024 Berkshire letters describe Apple repeatedly — and the framing is consistently consumer-brand, not technology. Apple does not belong in a "tech" mental model; it belongs in a brand-and-ecosystem mental model. (2) Enterprise hardware — Dell Technologies, Hewlett Packard Enterprise (HPE), Lenovo (Hong Kong-listed), Super Micro Computer (the canonical AI-server share-gainer 2023–24, with the 2024–25 SEC investigation as the cautionary chapter). Server-and-storage hardware was structurally challenged for the 2010s decade as enterprise workloads moved to public cloud; the AI-server build-out from 2023 has revived it. (3) Personal computer makers — HP Inc., Lenovo, Dell's PC piece, Acer (Taiwan-listed). PC unit volumes are mature; the structural growth rates are 0–3%; competition is brutal on price. (4) Storage and peripherals — NetApp, Pure Storage, Western Digital (HDD plus NAND flash; structurally cyclical), Seagate (HDD; structurally cyclical), Logitech (consumer peripherals), Corsair Gaming. (5) 3D printing, specialty hardware — 3D Systems, Stratasys, Materialise. The wisdom-tradition references for this industry beyond Apple are sparse. Buffett has not owned Dell or HPE; the IBM cautionary lesson (in IT Services prompt) applies to the broader enterprise-IT vendor landscape. The single most useful frame: separate Apple from everything else; it is the sector's only consumer-brand-franchise-shaped business and most analytical generalizations from "tech hardware" do not apply.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. Buffett's Apple commentary across Berkshire letters (2016 onward; cite each year; the 2024 trim commentary is particularly informative). Stratechery by Ben Thompson on Apple's ecosystem economics and aggregation-theory framing. IDC and Gartner research summaries on PC and server unit shipments where freely available. Damodaran's tech-hardware data. Specific industry trade press — The Information, Bloomberg Technology, The Verge for consumer-hardware coverage.
+
+Length: 3,500–5,000 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Technology Hardware, Storage & Peripherals businesses in general. Don't analyze any specific company as an investment.
+```

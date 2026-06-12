@@ -1,0 +1,321 @@
+{
+  "_meta": {
+    "purpose": "Cross-cutting finance and accounting terms used across all sectors. Loaded by the /stock-report skill and auto-injected as hover-tooltip glossary entries on first use per section. Sector-specific terms live in the per-sector primers; per-company terms (product names, acronyms) are auto-built per ticker at draft time.",
+    "match_rules": "The 'match' array lists every form Claude is likely to write that should be linked to this term. Matching is case-insensitive, whole-word, and applies to the FIRST occurrence in each section. Order entries from most specific to least so 'remaining performance obligations' wins over a hypothetical bare 'obligations' rule (none of which exist here, but the principle stays).",
+    "definition_rules": "Plain English. 1-2 sentences. State what the term IS and what it is FOR. No circular definitions. No undefined jargon inside a definition (or if used, it must itself be a glossary term)."
+  },
+  "terms": [
+    {
+      "term": "Free cash flow",
+      "abbrev": "FCF",
+      "match": ["FCF", "free cash flow"],
+      "definition": "The cash a company has left after paying operating costs, taxes, and capital spending. What's left can fund dividends, buybacks, debt paydown, or acquisitions — it is the cash actually available to owners."
+    },
+    {
+      "term": "Operating cash flow",
+      "abbrev": "OCF",
+      "match": ["OCF", "operating cash flow", "cash from operations", "cash flow from operations"],
+      "definition": "The cash a company collects from running its core business in a year, before spending on long-lived assets like factories, servers, or stores. Reported as the top section of the cash flow statement."
+    },
+    {
+      "term": "Capex",
+      "abbrev": null,
+      "match": ["capex", "capital expenditures", "capital expenditure"],
+      "definition": "Money spent on long-lived assets — buildings, machines, servers, software — that produce revenue over many years. Capex is a cash outflow today; on the income statement, the cost is spread over the asset's life as depreciation."
+    },
+    {
+      "term": "Return on invested capital",
+      "abbrev": "ROIC",
+      "match": ["ROIC", "return on invested capital"],
+      "definition": "How many cents of operating profit a company earns per dollar of capital deployed in the business. Sustained high ROIC over many years is the strongest quantitative signal of a real moat."
+    },
+    {
+      "term": "Return on equity",
+      "abbrev": "ROE",
+      "match": ["ROE", "return on equity"],
+      "definition": "Net income divided by shareholder equity — how many cents of profit per dollar of book equity. Easier to inflate than ROIC because adding debt shrinks equity, so a leveraged firm can post a high ROE without being a high-quality business."
+    },
+    {
+      "term": "EBITDA",
+      "abbrev": null,
+      "match": ["EBITDA"],
+      "definition": "Earnings before interest, taxes, depreciation, and amortization. Used to compare operating profitability across companies with different debt and tax situations, but it ignores depreciation — which is a real economic cost over time, even when it isn't a cash outflow this quarter."
+    },
+    {
+      "term": "Enterprise value",
+      "abbrev": "EV",
+      "match": ["enterprise value", "EV"],
+      "definition": "The price tag for the entire business: market value of equity, plus debt, minus cash on hand. What it would cost to buy the company outright, not just one share."
+    },
+    {
+      "term": "EV/EBITDA",
+      "abbrev": null,
+      "match": ["EV/EBITDA"],
+      "definition": "Enterprise value divided by EBITDA. A way to compare valuations when companies have very different debt levels and tax rates — using the whole-business price tag against a pre-financing earnings figure."
+    },
+    {
+      "term": "P/E ratio",
+      "abbrev": null,
+      "match": ["P/E ratio", "P/E", "price-to-earnings", "price to earnings"],
+      "definition": "Stock price divided by per-share earnings. A P/E of 20 means investors are paying $20 today for $1 of current annual earnings — useful as a quick comparison, deceptive when earnings are temporarily depressed or inflated."
+    },
+    {
+      "term": "Owner earnings",
+      "abbrev": null,
+      "match": ["owner earnings"],
+      "definition": "Buffett's term for what a business actually earns for its owners: reported earnings adjusted for non-cash items, less the capex truly required to maintain (not grow) the business. Closer to what an owner could pocket if she owned the whole company."
+    },
+    {
+      "term": "Discounted cash flow",
+      "abbrev": "DCF",
+      "match": ["DCF", "discounted cash flow"],
+      "definition": "A valuation method that estimates a company's future free cash flows year by year, then discounts each one back to today using a required rate of return. The sum is what the business is worth right now."
+    },
+    {
+      "term": "Reverse DCF",
+      "abbrev": null,
+      "match": ["reverse DCF"],
+      "definition": "A DCF run backwards. Instead of estimating future cash flows and getting a value, you take today's stock price as the answer and solve for the growth rate or margin the price implies. The question becomes: 'is the market assuming something believable?'"
+    },
+    {
+      "term": "Terminal value",
+      "abbrev": null,
+      "match": ["terminal value"],
+      "definition": "In a DCF, the value of all the cash flows beyond the explicit forecast period — the assumption that the business keeps producing cash forever after year 5 or year 10. Usually 60–80% of the total intrinsic value, and the part most sensitive to assumptions."
+    },
+    {
+      "term": "Weighted average cost of capital",
+      "abbrev": "WACC",
+      "match": ["WACC", "weighted average cost of capital"],
+      "definition": "The blended return a company must earn to satisfy both lenders and shareholders, weighted by how much of each it uses. Typically used as the discount rate in a DCF."
+    },
+    {
+      "term": "Equity risk premium",
+      "abbrev": "ERP",
+      "match": ["equity risk premium", "ERP"],
+      "definition": "The extra return investors demand for owning stocks instead of risk-free government bonds. Usually estimated at ~4–6% in US markets; the input that most affects DCF outcomes after growth assumptions."
+    },
+    {
+      "term": "Compound annual growth rate",
+      "abbrev": "CAGR",
+      "match": ["CAGR", "compound annual growth rate"],
+      "definition": "The steady annual rate that would take you from a starting value to an ending value over N years. Useful for comparing growth across different time periods on equal terms."
+    },
+    {
+      "term": "Basis points",
+      "abbrev": "bps",
+      "match": ["basis points", "bps"],
+      "definition": "One basis point equals 0.01%; 100 bps equals 1%. The convention exists so that 'rates rose 25 basis points' is unambiguous, where 'rates rose 25%' is not."
+    },
+    {
+      "term": "Margin of safety",
+      "abbrev": null,
+      "match": ["margin of safety"],
+      "definition": "Buying meaningfully below your estimate of intrinsic value, so that even if the estimate proves too optimistic you still don't overpay. Buffett's image: a bridge rated for 30 tons; you drive 10-ton trucks across."
+    },
+    {
+      "term": "Remaining performance obligations",
+      "abbrev": "RPO",
+      "match": ["remaining performance obligations", "RPO"],
+      "definition": "Revenue a company has signed contracts for but hasn't yet delivered or recognized. A backlog of guaranteed future income — the bigger it is relative to current revenue, the more visibility into future quarters."
+    },
+    {
+      "term": "Annual recurring revenue",
+      "abbrev": "ARR",
+      "match": ["ARR", "annual recurring revenue"],
+      "definition": "For subscription businesses, the annualized value of all active subscriptions at a point in time. What revenue would be over the next year if no customer added or cancelled anything."
+    },
+    {
+      "term": "Net revenue retention",
+      "abbrev": "NRR",
+      "match": ["NRR", "net revenue retention"],
+      "definition": "For a subscription business, the percent of last year's revenue from a cohort of customers that shows up this year, including upsells and after subtracting churn. Above 100% means the existing customer book grows even before new customers arrive — the gold-standard SaaS health metric."
+    },
+    {
+      "term": "Average revenue per user",
+      "abbrev": "ARPU",
+      "match": ["ARPU", "average revenue per user", "average revenue per customer"],
+      "definition": "Total revenue divided by user (or customer, or seat) count over a period. Tracking ARPU over time shows whether a company is raising prices or selling more to existing customers."
+    },
+    {
+      "term": "GAAP",
+      "abbrev": null,
+      "match": ["GAAP", "generally accepted accounting principles"],
+      "definition": "Generally Accepted Accounting Principles — the standardized US accounting rules public companies must follow when filing with the SEC. The 'official' earnings number."
+    },
+    {
+      "term": "Non-GAAP",
+      "abbrev": null,
+      "match": ["non-GAAP", "non GAAP"],
+      "definition": "Earnings adjusted by management to exclude items they say aren't representative — usually stock-based compensation, acquisition costs, or restructuring. Sometimes useful, sometimes a place where companies dress up numbers; always check what is being excluded."
+    },
+    {
+      "term": "Stock-based compensation",
+      "abbrev": "SBC",
+      "match": ["stock-based compensation", "stock based compensation", "SBC"],
+      "definition": "Salary paid to employees in stock instead of cash. A real economic cost — it dilutes existing shareholders — but it isn't a cash outflow, which is why non-GAAP earnings that exclude SBC tend to look flatteringly higher."
+    },
+    {
+      "term": "Finance lease",
+      "abbrev": null,
+      "match": ["finance lease", "capital lease"],
+      "definition": "A lease that effectively gives the lessee long-term control of the asset, like a financed purchase. Recorded on the balance sheet as both an asset (right-of-use) and a liability (future payments owed)."
+    },
+    {
+      "term": "Operating lease",
+      "abbrev": null,
+      "match": ["operating lease"],
+      "definition": "A shorter-term rental arrangement. Under current rules (ASC 842) it sits on the balance sheet, but the cost flows through the income statement as a single lease expense rather than split between interest and depreciation."
+    },
+    {
+      "term": "Mark-to-market",
+      "abbrev": null,
+      "match": ["mark-to-market", "mark to market"],
+      "definition": "Restating an asset or liability at its current market value, with the change in value flowing through the income statement. Standard for trading securities; controversial for less-liquid assets where 'current market value' is itself an estimate."
+    },
+    {
+      "term": "Equity method",
+      "abbrev": null,
+      "match": ["equity method"],
+      "definition": "How a company accounts for an investment in another business when it owns roughly 20–50%. The investor records its share of the investee's earnings on its own income statement, but not the underlying revenue."
+    },
+    {
+      "term": "10-K",
+      "abbrev": null,
+      "match": ["10-K", "10K", "annual report on Form 10-K"],
+      "definition": "A US public company's annual filing with the SEC — the most important document an investor reads. Covers business, risk factors, audited financial statements, and management's discussion of the year. Filed within 60–90 days of fiscal year end."
+    },
+    {
+      "term": "10-Q",
+      "abbrev": null,
+      "match": ["10-Q", "10Q"],
+      "definition": "A US public company's quarterly filing with the SEC. Less detailed than a 10-K — no full audit, less narrative — but with updated financials and disclosure of material events since the last filing."
+    },
+    {
+      "term": "8-K",
+      "abbrev": null,
+      "match": ["8-K", "8K"],
+      "definition": "A 'newsflash' SEC filing required when something material happens between regular reports — earnings releases, executive changes, large acquisitions, lawsuits. Triggered events have a short list of required disclosure items."
+    },
+    {
+      "term": "DEF 14A",
+      "abbrev": null,
+      "match": ["DEF 14A", "proxy statement", "proxy"],
+      "definition": "The proxy statement, filed before the annual shareholder meeting. Contains executive compensation in detail, board members and their backgrounds, related-party transactions, and items shareholders are voting on. The single best document for the question 'are management's interests aligned with mine?'"
+    },
+    {
+      "term": "Form 4",
+      "abbrev": null,
+      "match": ["Form 4"],
+      "definition": "Filed within two business days when an insider — executive, director, or 10%+ owner — buys or sells the company's stock. The official record for tracking insider activity."
+    },
+    {
+      "term": "10b5-1 plan",
+      "abbrev": null,
+      "match": ["10b5-1 plan", "10b5-1"],
+      "definition": "A pre-arranged trading plan an insider sets up to sell stock on a fixed schedule, intended to insulate them from accusations of trading on inside information. Modern abuses include cancelling and re-setting plans just before favorable news."
+    },
+    {
+      "term": "Working capital",
+      "abbrev": null,
+      "match": ["working capital"],
+      "definition": "Current assets minus current liabilities — the cash and near-cash a business has tied up in inventory, receivables, and short-term obligations to keep operating. A growing business often needs growing working capital, which absorbs cash even when profits are healthy."
+    },
+    {
+      "term": "Goodwill",
+      "abbrev": null,
+      "match": ["goodwill"],
+      "definition": "An accounting line that appears when one company buys another for more than the fair value of its identifiable assets. Sits on the balance sheet at the price paid; if the acquired business turns out to be worth less, goodwill is written down — a charge that quietly signals overpayment."
+    },
+    {
+      "term": "Impairment",
+      "abbrev": null,
+      "match": ["impairment", "impaired"],
+      "definition": "A write-down of an asset's recorded value when it's determined to be worth less than what's on the books. Most common with goodwill from past acquisitions and with long-lived assets that aren't generating expected returns."
+    },
+    {
+      "term": "Deferred revenue",
+      "abbrev": null,
+      "match": ["deferred revenue", "unearned revenue"],
+      "definition": "Cash a customer has paid for goods or services not yet delivered. Sits on the balance sheet as a liability — the company owes the future delivery — until earned, then becomes revenue. A growing deferred-revenue line is usually a positive sign for subscription businesses."
+    },
+    {
+      "term": "Gross margin",
+      "abbrev": null,
+      "match": ["gross margin"],
+      "definition": "Revenue minus the direct cost of producing what's sold, divided by revenue. The ceiling on profitability — every cost line below gross margin (R&D, marketing, overhead) eats into what's left."
+    },
+    {
+      "term": "Operating margin",
+      "abbrev": null,
+      "match": ["operating margin", "OI margin"],
+      "definition": "Operating income divided by revenue. What's left after all the costs of running the core business — including R&D, sales, and overhead — but before interest and taxes."
+    },
+    {
+      "term": "Net margin",
+      "abbrev": null,
+      "match": ["net margin", "net profit margin"],
+      "definition": "Net income divided by revenue. The bottom line — what flows to shareholders after every cost, including interest and taxes."
+    },
+    {
+      "term": "Discount rate",
+      "abbrev": null,
+      "match": ["discount rate"],
+      "definition": "The annual rate used to convert future cash flows into today's dollars in a valuation. Higher discount rate means future cash is worth less today. Often equal to WACC; sometimes set as the investor's personal required return."
+    },
+    {
+      "term": "Hurdle rate",
+      "abbrev": null,
+      "match": ["hurdle rate"],
+      "definition": "The minimum return a project or investment must earn to be worth doing. Often set equal to a company's WACC or to an investor's required return."
+    },
+    {
+      "term": "Beta",
+      "abbrev": null,
+      "match": ["beta"],
+      "definition": "A measure of how much a stock's price moves relative to the broader market. Beta of 1 moves with the market; 1.5 moves 50% more; 0.5 moves half as much. Used in CAPM to estimate cost of equity."
+    },
+    {
+      "term": "Total shareholder return",
+      "abbrev": "TSR",
+      "match": ["total shareholder return", "TSR"],
+      "definition": "Stock price appreciation plus dividends, expressed as a percent return over a period. The single number that captures what an investor actually earned."
+    },
+    {
+      "term": "Buyback",
+      "abbrev": null,
+      "match": ["buyback", "share repurchase", "share buyback"],
+      "definition": "A company using its cash to buy its own shares on the open market. Reduces the share count, which raises per-share earnings even when total earnings don't change. Value-creating only if shares are bought below intrinsic value."
+    },
+    {
+      "term": "Dividend yield",
+      "abbrev": null,
+      "match": ["dividend yield"],
+      "definition": "Annual dividends per share divided by the current share price. A 3% yield means each dollar invested today returns three cents per year in cash, before any price change."
+    },
+    {
+      "term": "Net debt",
+      "abbrev": null,
+      "match": ["net debt"],
+      "definition": "Total debt minus cash and short-term investments on the balance sheet. The figure used in enterprise value — what a buyer would actually owe after taking the cash with the company."
+    },
+    {
+      "term": "Payout ratio",
+      "abbrev": null,
+      "match": ["payout ratio", "dividend payout ratio"],
+      "definition": "Dividends paid as a percentage of earnings (or sometimes free cash flow). A 60% payout ratio leaves 40% of earnings inside the business for reinvestment, debt paydown, or buybacks. Very high payout ratios can signal a dividend at risk if earnings dip."
+    },
+    {
+      "term": "ASC 606",
+      "abbrev": null,
+      "match": ["ASC 606"],
+      "definition": "The US accounting standard governing how revenue is recognized — particularly important for software and subscription companies. Sets rules on when contract revenue can be booked versus deferred, which is why RPO and deferred revenue have grown into prominent disclosures."
+    },
+    {
+      "term": "Tangible book value",
+      "abbrev": null,
+      "match": ["tangible book value", "tangible equity"],
+      "definition": "Shareholder equity minus goodwill and other intangible assets. The 'hard' equity — what would be left if every intangible got written to zero. Especially relevant for banks and acquisitive businesses."
+    }
+  ]
+}

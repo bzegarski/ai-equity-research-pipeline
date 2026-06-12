@@ -1,0 +1,27 @@
+# Entertainment — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/Entertainment_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the ENTERTAINMENT industry — film studios, music labels, video games, live entertainment, streaming — to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for the IP-and-licensing economics that drive film studios and music labels, the structurally healthier video-game franchise economics (Take-Two's Grand Theft Auto, Activision's Call of Duty, Roblox's user-generated platform), the live-entertainment recovery dynamics post-pandemic, and the streaming-platform competition reshaping content economics through 2025.
+
+What to attend to particularly for Entertainment. The industry has four structurally distinct sub-segments. (1) Film studios and content — Disney (Marvel, Pixar, Lucasfilm, ABC, ESPN), Warner Bros. Discovery, Paramount Global, Sony Pictures (within Sony), Netflix (the platform-and-content-investor that fundamentally restructured film-and-TV economics), Lions Gate Entertainment. The streaming-wars era of 2019–24 saw enormous content-investment ramps (Disney+ launched 2019; HBO Max 2020; Paramount+ 2021; Apple TV+ 2019; Peacock 2020), most of which produced negative EBITDA for years and partial structural reset through 2024 as bundling, ads-supported tiers, and password-sharing crackdowns improved unit economics. (2) Music — Universal Music Group (Netherlands-listed; the largest music label, with Vivendi spin 2021), Warner Music Group, Sony Music (within Sony), Spotify (the dominant audio-streaming platform), Live Nation Entertainment (Ticketmaster + concert promotion). The structural recovery of recorded music revenue from 2014 onward (driven by streaming) is one of the more underappreciated structural turnarounds in equity markets — the major labels saw revenue-per-stream and total revenue compound for the first time in two decades. (3) Video games — Electronic Arts (EA Sports, Madden, FIFA / EA Sports FC), Take-Two Interactive (Grand Theft Auto, NBA 2K, Borderlands), Activision Blizzard (acquired by Microsoft 2023; Call of Duty, World of Warcraft), Roblox (user-generated platform), Nintendo (Japan-listed), Microsoft's Xbox (within Microsoft), Sony PlayStation (within Sony), Embracer Group, Ubisoft, Capcom. Single-franchise-driven economics (Grand Theft Auto VI release expected 2025–26 will likely produce one of the largest single-quarter revenue events in entertainment history); platform economics for Roblox; subscription-and-microtransaction monetization for live-service games. (4) Live entertainment — Live Nation Entertainment, Madison Square Garden Entertainment, Cinemark, AMC Entertainment (post-meme-stock-saga), IMAX. Pandemic-era reset and 2022–24 recovery. The wisdom-tradition references for this industry are sparse from canonical books — Buffett has not engaged Entertainment substantially. Stratechery's writing on the streaming wars, Disney's strategic positioning, and the Netflix flywheel is the canonical contemporary primer. The single most useful frame: distinguish IP-owning franchise businesses (Disney's Marvel, Take-Two's GTA, Universal Music's catalog) from platform-and-distribution businesses (Netflix, Spotify, Roblox) — they earn returns through different mechanisms and require different mental models.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. Stratechery by Ben Thompson on streaming wars and the Disney / Netflix / Apple TV+ competitive structure. Matthew Ball's writing on streaming-and-content economics. The Recording Industry Association of America (RIAA) for music-industry data. The Entertainment Software Association (ESA) for video-game industry data. Damodaran's entertainment-sector data. Specific industry trade press — Variety, The Hollywood Reporter, Music Business Worldwide, GamesIndustry.biz.
+
+Length: 3,500–5,000 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Entertainment businesses in general. Don't analyze any specific company as an investment.
+```

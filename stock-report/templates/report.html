@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{COMPANY}} ({{TICKER}}) - Investment Report</title>
+<style>
+/* ============================================================
+   /stock-report — reader-focused template
+   Self-contained: no external CSS, JS, or fonts.
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+  --ink:        #1a1a1a;
+  --ink-soft:   #444;
+  --ink-mute:   #666;
+  --ink-fade:   #888;
+  --rule:       #e6e6e6;
+  --rule-soft:  #f0f0f0;
+  --bg:         #ffffff;
+  --bg-tint:    #f7f7f7;
+  --bg-row:     #fafafa;
+  --link:       #1f5fb4;
+  --link-hover: #143f7a;
+  --buy:        #1f7a3a;
+  --watch:      #b35a00;
+  --pass:       #a83232;
+  --insight:    #1f7a3a;
+  --insight-bg: #f0f8f3;
+  --warning:    #a83232;
+  --warning-bg: #fbf2f2;
+  --data:       #1f5fb4;
+  --data-bg:    #f3f7fb;
+  --learn:      #5a3aa8;
+  --learn-bg:   #f5f2fb;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.62;
+  color: var(--ink);
+  background: var(--bg);
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 28px 80px;
+  text-rendering: optimizeLegibility;
+}
+
+/* ----------------------- typography ----------------------- */
+
+h1, h2, h3, h4 {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  line-height: 1.25;
+  margin-top: 1.4em;
+  margin-bottom: 0.45em;
+}
+h1 { font-size: 28px; margin-top: 0; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; color: var(--ink-soft); }
+h4 { font-size: 15px; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.04em; }
+
+p { margin: 0.7em 0; }
+em { color: var(--ink-soft); }
+strong { color: var(--ink); }
+
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--link-hover); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 28px 0; }
+
+ul, ol { padding-left: 22px; margin: 0.7em 0; }
+li { margin: 0.25em 0; }
+
+blockquote {
+  border-left: 3px solid var(--link);
+  margin: 1em 0;
+  padding: 0.4em 16px;
+  color: var(--ink-soft);
+  background: var(--data-bg);
+  font-style: italic;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", Menlo, monospace;
+  font-size: 0.92em;
+  background: var(--rule-soft);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+pre {
+  background: var(--bg-tint);
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: transparent; padding: 0; }
+
+/* ----------------------- cover ----------------------- */
+
+header.cover {
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 22px;
+  margin-bottom: 30px;
+}
+header.cover h1 {
+  font-size: 30px;
+  margin: 0 0 8px;
+}
+header.cover .ticker {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+}
+header.cover .thesis {
+  margin: 14px 0 0;
+  font-size: 16px;
+  color: var(--ink-soft);
+}
+
+.verdict-banner {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--ink-fade);
+  margin: 14px 0 4px;
+}
+.verdict-banner.buy        { background: var(--buy); }
+.verdict-banner.watchlist,
+.verdict-banner.watch      { background: var(--watch); }
+.verdict-banner.pass,
+.verdict-banner.reject     { background: var(--pass); }
+
+/* ----------------------- TOC ----------------------- */
+
+nav.toc {
+  background: var(--bg-tint);
+  padding: 16px 22px;
+  border-radius: 6px;
+  margin-bottom: 36px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+}
+nav.toc strong {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+nav.toc ol {
+  list-style: decimal;
+  margin: 0;
+  padding-left: 28px;
+  columns: 2;
+  column-gap: 24px;
+}
+@media (max-width: 600px) { nav.toc ol { columns: 1; } }
+nav.toc li { margin: 3px 0; break-inside: avoid; }
+nav.toc a { color: var(--link); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+
+/* ----------------------- sections ----------------------- */
+
+section.report-section {
+  margin: 44px 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+  scroll-margin-top: 16px;
+}
+section.report-section > h2 { margin-top: 0; }
+section.missing-draft { opacity: 0.55; }
+section.missing-draft .callout.warning { font-family: ui-sans-serif, system-ui, sans-serif; }
+
+/* ----------------------- callouts ----------------------- */
+/* Used for: insight (something the reader is unlikely to have considered),
+   warning (risk / caveat), data (chart caption / numerical anchor),
+   learn (the → Learn more inline pointer). */
+
+.callout {
+  border-left: 4px solid var(--data);
+  background: var(--data-bg);
+  padding: 14px 20px;
+  margin: 22px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.callout > :first-child { margin-top: 0; }
+.callout > :last-child  { margin-bottom: 0; }
+.callout strong { color: var(--ink); }
+
+.callout.insight { border-left-color: var(--insight); background: var(--insight-bg); }
+.callout.warning { border-left-color: var(--warning); background: var(--warning-bg); }
+.callout.data    { border-left-color: var(--data);    background: var(--data-bg); }
+.callout.learn   { border-left-color: var(--learn);   background: var(--learn-bg); }
+
+.callout.learn::before {
+  content: "→ Learn more";
+  display: block;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--learn);
+  margin-bottom: 6px;
+}
+
+/* Chart caption: small data-styled callout under SVGs.
+   Claude writes a one-sentence takeaway; this is its container. */
+.chart-caption {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin: 6px 0 18px;
+  padding: 4px 0;
+  border-top: 1px dotted var(--rule);
+}
+
+/* ----------------------- charts grid ----------------------- */
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 22px 0;
+}
+.charts-grid > svg,
+.charts-grid > figure {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+.charts-grid figure { margin: 0; padding: 8px; }
+.charts-grid figure svg { display: block; width: 100%; height: auto; }
+.charts-grid figcaption {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--ink-mute);
+  padding: 6px 4px 0;
+}
+@media (max-width: 720px) {
+  .charts-grid { grid-template-columns: 1fr; }
+  body { padding: 28px 18px 60px; font-size: 16px; }
+}
+
+/* ----------------------- tables ----------------------- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 14px 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+}
+th, td {
+  border: 1px solid var(--rule);
+  padding: 8px 11px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--bg-tint);
+  font-weight: 600;
+  color: var(--ink);
+}
+tr:nth-child(even) td { background: var(--bg-row); }
+
+/* ----------------------- glossary hover (CSS-only) ----------------------- */
+/*
+   inject_glossary.py wraps the FIRST occurrence per section like:
+
+     <span class="gloss" tabindex="0"
+           data-term="Free cash flow"
+           data-def="The cash a company has left after operating costs, taxes, and capex...">FCF</span>
+
+   Hover or keyboard-focus pops the definition. No JavaScript needed.
+*/
+
+.gloss {
+  border-bottom: 1px dotted #999;
+  cursor: help;
+  position: relative;
+  outline: none;
+}
+.gloss:hover,
+.gloss:focus { border-bottom-color: var(--link); }
+
+.gloss::after {
+  content: attr(data-term) " — " attr(data-def);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  z-index: 50;
+  width: 340px;
+  max-width: min(90vw, 340px);
+  padding: 10px 14px;
+  background: var(--ink);
+  color: #fff;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  border-radius: 5px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s ease-out;
+  text-transform: none;
+  white-space: normal;
+}
+.gloss::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: calc(100% + 2px);
+  border: 6px solid transparent;
+  border-bottom-color: var(--ink);
+  z-index: 51;
+  opacity: 0;
+  transition: opacity 0.12s ease-out;
+}
+.gloss:hover::after,
+.gloss:focus::after,
+.gloss:hover::before,
+.gloss:focus::before { opacity: 1; }
+
+/* Repeat occurrences (after the first per section) get a flatter style: still
+   hoverable, no underline, so the prose isn't visually noisy. */
+.gloss.repeat { border-bottom: none; }
+
+/* ----------------------- expandable mini-explainer ----------------------- */
+/* For concepts bigger than a one-sentence definition.
+   Claude inserts:
+     <details class="explainer"><summary>Gross margin (more)</summary>
+     <p>...100-200 word explainer...</p></details>            */
+
+details.explainer {
+  margin: 14px 0;
+  padding: 10px 16px;
+  border-left: 3px solid var(--data);
+  background: var(--data-bg);
+  border-radius: 0 4px 4px 0;
+  font-size: 15px;
+}
+details.explainer > summary {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--data);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 0;
+}
+details.explainer[open] > summary { margin-bottom: 6px; }
+details.explainer > p:last-child { margin-bottom: 0; }
+
+/* ----------------------- analyst-trace toggle ----------------------- */
+/* Optional collapsible at the bottom of any section that wants to expose the
+   underlying [FACT|source|confidence] records. Hidden by default; printed flat
+   when @media print. */
+
+details.analyst-trace {
+  margin: 22px 0 0;
+  padding: 0;
+  border-top: 1px dashed var(--rule);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--ink-mute);
+}
+details.analyst-trace > summary {
+  cursor: pointer;
+  padding: 8px 0;
+  color: var(--ink-mute);
+  list-style: none;
+}
+details.analyst-trace > summary::before {
+  content: "▸ ";
+  display: inline-block;
+  margin-right: 4px;
+  transition: transform 0.15s;
+}
+details.analyst-trace[open] > summary::before { content: "▾ "; }
+details.analyst-trace pre {
+  font-size: 12px;
+  background: var(--bg-tint);
+  margin: 8px 0;
+}
+
+/* Subtle epistemic-discipline markers.
+   Inline single-letter pills the writer adds at the end of load-bearing claims:
+     <span class="claim-tag claim-fact" title="10-K Item 7">F</span>
+     <span class="claim-tag claim-interpretation" title="reasoning basis">I</span>
+     <span class="claim-tag claim-humanverify" title="what to verify">?</span>
+   Default state is muted (low opacity, light pastels). Hover restores full color
+   and the title attribute reveals the source / reasoning / verify-target. */
+.claim-tag {
+  display: inline-block;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 1px 4px;
+  margin-left: 3px;
+  border-radius: 2px;
+  vertical-align: 2px;
+  cursor: help;
+  opacity: 0.45;
+  transition: opacity 0.15s, background-color 0.15s;
+  user-select: none;
+}
+.claim-tag:hover, .claim-tag:focus { opacity: 1; }
+.claim-fact           { background: #e8f0e9; color: #2d5a35; }
+.claim-interpretation,
+.claim-interp         { background: #f5ecdc; color: #6b4a1f; }
+.claim-humanverify,
+.claim-hv             { background: #f0e2e2; color: #6b2d2d; }
+@media print {
+  .claim-tag { opacity: 1; }
+}
+
+/* ----------------------- key numbers panel ----------------------- */
+/* For the Section 2 (Business) key-numbers callout box, etc.
+   Claude can write:
+     <aside class="key-numbers">
+       <h4>Key numbers</h4>
+       <dl>
+         <dt>Revenue</dt><dd>$281.7B (FY25), +15% YoY</dd>
+         ...
+       </dl>
+     </aside>
+*/
+aside.key-numbers {
+  background: var(--bg-tint);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 16px 22px;
+  margin: 24px 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+aside.key-numbers h4 {
+  margin: 0 0 10px;
+  color: var(--ink-mute);
+}
+aside.key-numbers dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 18px;
+  margin: 0;
+  font-size: 14px;
+}
+aside.key-numbers dt {
+  font-weight: 600;
+  color: var(--ink);
+}
+aside.key-numbers dd {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+/* ----------------------- going-further sidebar ----------------------- */
+/* Final block aggregating every → Learn more pointer. */
+.going-further {
+  margin-top: 50px;
+  padding: 22px 26px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--learn-bg);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+}
+.going-further h3 {
+  margin: 0 0 10px;
+  color: var(--learn);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.going-further ul { padding-left: 22px; }
+.going-further li { margin: 6px 0; }
+
+/* ----------------------- footer ----------------------- */
+
+footer.report-footer {
+  margin-top: 60px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  color: var(--ink-fade);
+  line-height: 1.5;
+}
+
+/* ----------------------- print ----------------------- */
+
+@media print {
+  body {
+    max-width: none;
+    padding: 0;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+  nav.toc { display: none; }
+  details, details.analyst-trace, details.explainer { open: open; }
+  details > summary { display: none; }
+  details > * { display: block !important; }
+  .gloss { border-bottom: none; }
+  .gloss::after, .gloss::before { display: none; }
+  section.report-section { page-break-inside: avoid; }
+  h2 { page-break-after: avoid; }
+  a { color: var(--ink); text-decoration: none; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: var(--ink-mute); }
+}
+</style>
+</head>
+<body>
+{{COVER}}
+{{TOC}}
+{{BODY}}
+<footer class="report-footer">
+  Built by <code>/stock-report</code> from canonical post-verification research files.
+  All factual claims trace to filings indexed in <code>_report_drafts/report_data.json</code>.
+  Reading guidance and methodology in the skill's <code>CLAUDE.md</code>.
+</footer>
+</body>
+</html>

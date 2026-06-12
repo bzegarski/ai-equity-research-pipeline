@@ -1,0 +1,27 @@
+# Health Care Technology — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/Health_Care_Technology_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the HEALTH CARE TECHNOLOGY industry — electronic health records, life-sciences software, healthcare-IT — to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for the structurally exceptional switching-cost moats in healthcare software (electronic health records and life-sciences platforms), the regulatory and validation hurdles that protect incumbents, why life-sciences software (Veeva, IQVIA's tech) earns SaaS-like multiples while clinical-data and patient-engagement startups have struggled, and the structural dynamics of healthcare data interoperability.
+
+What to attend to particularly for Health Care Technology. The industry is small but concentrated in unusually high-quality businesses. (1) Electronic Health Records (EHR) — Epic Systems (private; the dominant U.S. hospital EHR), Oracle Health (formerly Cerner; acquired by Oracle for $28B in 2022), MEDITECH, Allscripts (now Veradigm), athenahealth (private). The Epic / Cerner duopoly captures the vast majority of U.S. inpatient hospital systems; switching costs are extraordinary (a hospital EHR conversion takes 18–36 months and costs $100M–$1B+ for a large system; the workflow integration depth across orders, results, billing, and clinical decision-support produces some of the deepest software switching costs anywhere in equity markets). The listed universe is limited because Epic has stayed private. (2) Life-sciences software — Veeva Systems (the canonical case; CRM and clinical / regulatory / quality applications for pharma and biotech, run on Salesforce platform initially then expanding), Schrodinger (computational drug discovery), Certara (model-informed drug development). Veeva's economics resemble the highest-quality software businesses — 80%+ gross margins, 25%+ operating margins, very high net revenue retention from existing customers expanding modules. (3) Health-care data and analytics — IQVIA Holdings (life-sciences data and clinical-trial services), Evolent Health, Premier (group purchasing for hospitals plus analytics), Definitive Healthcare. Network-effect data businesses with structural advantages from accumulated clinical and claims data. (4) Patient-engagement and digital health — Teladoc Health, Hims & Hers, GoodRx, Doximity, Health Catalyst. Mixed history; the 2020–22 pandemic-era stocks have mostly underperformed since. The wisdom-tradition references are sparse — this is one of the more contemporary equity sub-segments, with the strongest businesses (Veeva especially) referenced in modern practitioner writing on intangible-asset moats and SaaS economics rather than the canonical wisdom-tradition books. Pat Dorsey's Little Book on switching-cost moats with explicit healthcare-IT treatment is directly applicable. Damodaran's writing on intangible-asset valuation applies. The single most useful frame: distinguish the structural-monopoly businesses (Epic at incumbent share; Veeva in pharma life-cycle management) from the still-contested digital-health sub-segments where business models have not converged.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. The Office of the National Coordinator for Health Information Technology (ONC) for U.S. EHR-adoption data. KLAS Research for EHR vendor performance benchmarks. CMS for the MACRA / MIPS regulatory framework that drove EHR adoption. Damodaran's healthcare-services and software-sector data. Pat Dorsey's Little Book on switching-cost moats. Specific industry trade press — Healthcare IT News, FierceHealthcare, MobiHealthNews. Stratechery on the platform-vs-pipe distinction applies to digital-health platforms.
+
+Length: 3,000–4,500 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Health Care Technology businesses in general. Don't analyze any specific company as an investment.
+```

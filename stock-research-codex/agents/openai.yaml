@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stock Research Codex"
+  short_description: "Codex stock research summaries, cross-checks, and Buffett-style valuation"
+  default_prompt: "Use $stock-research-codex TICKER to run Codex's assigned stock research phase. For large Step 1A runs, start with $stock-research-codex TICKER --step1a-10k and continue the resumable substeps."

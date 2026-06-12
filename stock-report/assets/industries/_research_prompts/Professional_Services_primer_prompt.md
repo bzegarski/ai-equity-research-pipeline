@@ -1,0 +1,27 @@
+# Professional Services — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/Professional_Services_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the PROFESSIONAL SERVICES industry to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for the very different economics of staffing and outsourcing (people-leveraged, cyclical, lower-margin) versus information-services and credit-bureau businesses (data-asset-leveraged, recurring-revenue, high-margin), why payroll outsourcing is a float-economics business that compounds quietly at high returns on capital, and how distribution-channel moats (CPA referrals, broker networks) can be more durable than product moats in this corner of the economy.
+
+What to attend to particularly for Professional Services. The industry breaks into three structurally different sub-segments. (1) Staffing — Robert Half, ManpowerGroup, Kelly Services, Heidrick & Struggles. People-leveraged businesses with cyclical revenue tied directly to corporate hiring activity. Lower margins (operating margins 4–8%), capex-light, but with significant working-capital cycles in payroll funding. The 2008–09 collapse and the 2020 pandemic dip are the canonical recent stress tests. (2) Payroll outsourcing and HR services — Paychex, Automatic Data Processing (ADP), TriNet, Insperity. These are float-economics businesses: they hold employer payroll-tax dollars between collection and remittance to the IRS / state agencies (typically 1–7 days), earning interest on a multi-billion-dollar float at near-100% incremental margin. ADP holds ~$30B+ of float; Paychex holds ~$5B. The float income is rate-cyclical, but the underlying recurring service revenue (per-employee-per-month subscription fees) compounds steadily as customer count grows. Distribution-channel moats are the structural advantage — the AICPA's preferred-payroll-provider partnership with Paychex (through 2027) and ADP's broker / accountant referral network produce >50% of new client flow at near-zero customer-acquisition cost. PEO (Professional Employer Organization) co-employment, where the service provider becomes the legal employer for benefits and workers' comp purposes, is a related but more complex sub-line with insurance-style float and reserve adequacy questions. (3) Information services and credit bureaus — Equifax, Experian, Fair Isaac (FICO), Verisk, Nielsen, Dun & Bradstreet. These are data-asset businesses: the underlying credit file or risk database is the moat, customers (banks, insurers, lenders) pay per query, and the marginal cost of an additional query is near zero. Network effects compound — more reporting furnishers improve the data; better data attracts more customers. FICO's pricing power within the U.S. mortgage origination workflow is the canonical case. Wisdom-tradition writings on this industry are limited but instructive. Buffett's GEICO 1996 letter on distribution-cost advantages frames the structural insight that channel-cost moats compress on competition; the same logic applies to Paychex / ADP at the CPA referral layer. The H&R Block vs TurboTax (2003–2025) trajectory is the canonical cautionary analog for what happens to a service-and-relationship incumbent when a software-led player attacks from the workflow flank.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. The American Staffing Association for staffing-industry data. NAPEO (National Association of Professional Employer Organizations) for PEO-industry data. The U.S. Bureau of Labor Statistics employment data for cyclical context. Damodaran's professional-services data. Buffett's GEICO commentary on distribution-cost moats (1996 letter especially). Pat Dorsey's Little Book on data-asset and distribution-channel moats. Specific industry trade press — Staffing Industry Analysts, HR Executive, Payroll Today.
+
+Length: 3,500–5,000 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Professional Services businesses in general. Don't analyze any specific company as an investment.
+```

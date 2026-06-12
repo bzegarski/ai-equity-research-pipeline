@@ -1,0 +1,27 @@
+# IT Services — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/IT_Services_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the IT SERVICES industry — Accenture, IBM, Infosys, TCS, Cognizant, contract IT consultancies — to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for the structurally lower margins of IT services compared to pure software (people-leveraged business model with people-bounded scaling), the offshore-onshore labor-cost arbitrage that drove the 2000–2020 rise of Indian IT services, the bookings-to-revenue conversion cycle, and Buffett's IBM cautionary lesson on what happens when an enterprise IT services incumbent loses its moat to cloud and AI-native disruption.
+
+What to attend to particularly for IT Services. The industry's defining feature is people-leveraged scaling — revenue is essentially "billable hours times bill rate," and operating margins are bounded by labor costs that grow with the business. Operating margins typically run 10–15% (vs 25–35% for pure software), and value compounds through utilization (billable hours / available hours), pyramid efficiency (junior-to-senior staff ratio), and the gradual shift toward higher-value managed services and platform work. (1) Diversified Western IT services — Accenture (the canonical operator; ~$65B revenue, consistently above-industry margins, organic growth supplemented by ~30 small acquisitions per year), IBM (post-2010s pivot toward consulting via Kyndryl spin-off and Red Hat acquisition, then HashiCorp 2024), DXC Technology, Capgemini (Paris-listed), Atos (Paris-listed), CGI Group. (2) Offshore Indian IT services — Tata Consultancy Services (TCS), Infosys, Wipro, HCL Technologies, Tech Mahindra. The structural rise from 2000–2020 was driven by labor-cost arbitrage (a developer in Bangalore at $30K vs an equivalent in New York at $150K) plus rapidly improving service quality. The offshore model was the single biggest structural disruption to Western IT services in the past quarter-century. (3) Specialty consulting and managed services — Cognizant Technology Solutions (the Indian-American hybrid), Genpact (BPO and analytics), EPAM Systems (engineering services with Eastern European delivery), Globant (LatAm-driven engineering), Kforce, ASGN. (4) Specialty Big-Four-adjacent consulting — Booz Allen Hamilton (defense and federal consulting), CACI International (defense IT), Leidos, ManTech (acquired private 2022), Science Applications International (SAIC). Federal IT services with longer-cycle contract economics. The wisdom-tradition reference for this industry is Buffett's IBM position — bought 2011 thesis around enterprise stickiness and the Watson AI franchise; sold 2018 at a material loss after IBM's revenue declined for 22 consecutive quarters and the cloud disruption proved deeper than expected. The 2017 Berkshire letter and 2018 commentary on the IBM exit are the canonical wisdom-tradition writings — and the cautionary lesson is exactly the kind a thoughtful long-term investor needs to internalize about enterprise-IT incumbents that look defensible until they aren't. The current AI-and-cloud disruption is reshaping the industry in real time — agentic AI threatens to compress the people-leveraged model further, and the listed IT-services operators are racing to reposition toward platform-and-IP-based offerings.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. Buffett's IBM commentary across Berkshire letters (2011 onward through the 2018 exit; cite each year). NASSCOM (the National Association of Software and Service Companies in India) for offshore-services industry data. ISG (Information Services Group) Index for IT-services contract data. Damodaran's IT-services data. Pat Dorsey on services-vs-software moat distinctions. Specific industry trade press — CIO, ComputerWeekly, Forbes IT Services coverage.
+
+Length: 3,500–5,000 words. Organize however best serves the answer.
+
+Note: this is research about how to think about IT Services businesses in general. Don't analyze any specific company as an investment.
+```

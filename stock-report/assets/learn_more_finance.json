@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "purpose": "Cross-cutting `Learn more` resources usable across all 11 GICS sectors. Loaded by the /stock-report skill alongside the per-sector primer's own `Where to learn more` block; both feed the inline `→ Learn more` callouts and the report's bottom-of-page Going further sidebar.",
+    "rules": "Every URL was visited and confirmed live during authoring (date in `verified` field). Do not invent URLs at draft time. If a URL goes 404 or moves on a future run, flag it and re-verify before shipping the report; do not silently substitute a guess. Each entry's `note` describes what specifically to look for on the page so the reader is pointed at content, not just a homepage.",
+    "categories": {
+      "valuation": "Resources on how to value a business — DCF mechanics, discount rates, terminal value, narrative-and-numbers thinking.",
+      "filings": "Resources on reading SEC filings (10-K, 10-Q, 8-K, DEF 14A) and using EDGAR.",
+      "investor_writing": "Long-running letters and memos from practitioner investors, useful as both reading and as worked examples of investor reasoning.",
+      "free_research": "Open-access institutional research on finance, business strategy, and economics.",
+      "data": "Free historical and current economic / market data downloads.",
+      "strategy": "Business and competitive-strategy commentary used to frame what kind of business you're looking at."
+    }
+  },
+  "resources": [
+    {
+      "name": "Aswath Damodaran — NYU Stern homepage",
+      "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+      "category": "valuation",
+      "note": "Gateway to all his free teaching material. Four sections — Teaching, Writing, Data, Tools — covering valuation, corporate finance, and investment philosophy. Every spreadsheet on the site is downloadable; every class is recorded and posted free.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Damodaran — Musings on Markets blog",
+      "url": "https://aswathdamodaran.blogspot.com/",
+      "category": "valuation",
+      "note": "Damodaran's current commentary on individual valuations, market events, and methodology debates. Use it for worked examples of how a sophisticated valuator thinks through a specific company in real time.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Damodaran — Data archive",
+      "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/dataarchived.html",
+      "category": "data",
+      "note": "Industry averages for betas, costs of capital, margins, payout ratios; equity risk premiums; country risk premiums. Updated annually each January and archived back to 1999. The canonical free reference for DCF inputs.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Damodaran — YouTube channel",
+      "url": "https://www.youtube.com/@AswathDamodaranonValuation",
+      "category": "valuation",
+      "note": "Full recorded sessions from his MBA Equity Valuation and Corporate Finance courses, released free as the semesters run. Search for specific topics (`Damodaran reverse DCF`, `Damodaran terminal value`, `Damodaran cost of capital`) to get a 10–20-minute lecture from someone who teaches this for a living.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Investor.gov — Introduction to Investing",
+      "url": "https://www.investor.gov/introduction-investing",
+      "category": "filings",
+      "note": "The SEC's own investor-education portal. Plain-English explanations of how stock markets work, how to read filings, what to ask before investing, and how investment products differ. Written for non-specialists and unbiased by definition (it's the regulator).",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Investor.gov — How Stock Markets Work",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work",
+      "category": "filings",
+      "note": "Sub-section covering market participants, order types, brokerage accounts, and trade execution. Useful as the first reading for anyone new to public markets — pairs naturally with the Section 5 (competitive landscape) and Section 12 (decision framework) discussions in the report.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Berkshire Hathaway — Annual shareholder letters",
+      "url": "https://www.berkshirehathaway.com/letters/letters.html",
+      "category": "investor_writing",
+      "note": "Buffett's letters from 1977 onward, freely available. The 1977–1989 letters in particular are a free MBA in business analysis — moats, capital allocation, accounting honesty, and how to think about price vs value. Treat them as case-study collections rather than chronology.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Berkshire — 1977 letter (worked example)",
+      "url": "https://www.berkshirehathaway.com/letters/1977.html",
+      "category": "investor_writing",
+      "note": "Specific link useful when the report introduces ROE or owner earnings: this letter is where Buffett argues return on equity capital matters more than EPS growth, and the example is concrete (textile vs insurance). Cite when the reader needs to see the original argument, not a summary.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Oaktree Capital — Howard Marks memos",
+      "url": "https://www.oaktreecapital.com/insights/memos",
+      "category": "investor_writing",
+      "note": "Memo archive from 1990 to present, free, no login. Marks writes more about market behavior, cycles, and risk than about specific companies — pairs especially well with Section 10 (how this could go wrong) and Section 12 (decision framework). The 2007–2009 memos in particular are a worked tutorial in how to think about risk before, during, and after a crash.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "CFA Institute — Research Foundation",
+      "url": "https://rpc.cfainstitute.org/research/foundation",
+      "category": "free_research",
+      "note": "Independent research published as monographs and books. Topics include valuation, capital allocation, behavioral finance, and accounting analysis. Many titles are downloadable PDFs at no cost; useful when a section's concept (e.g. accounting quality) deserves a more rigorous treatment than the report itself can give.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Corporate Finance Institute — Resources library",
+      "url": "https://corporatefinanceinstitute.com/resources/",
+      "category": "free_research",
+      "note": "Practitioner-written articles on accounting, financial-statement analysis, financial modeling, and corporate finance. Topics organized into 40+ learning paths. A solid second-stop reference when an investor.gov page is too elementary but a CFA Foundation monograph is too dense.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Stratechery (Ben Thompson)",
+      "url": "https://stratechery.com/",
+      "category": "strategy",
+      "note": "Tech and platform strategy analysis. One free article per week (`This Week in Stratechery`, Fridays); deeper archive paywalled. When a Section 6 (moat) or Section 5 (competitive landscape) discussion involves platforms, network effects, or aggregation theory, Stratechery is the standard practitioner reference.",
+      "free_status": "freemium",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Bessemer Venture Partners — Atlas",
+      "url": "https://www.bvp.com/atlas",
+      "category": "strategy",
+      "note": "Free SaaS, cloud, fintech, AI, and healthcare research. Industry-roadmap pages, the annual State of the Cloud report, and benchmark posts (Rule of 40, Magic Number, NRR cohorts) are widely cited primary sources for software-business unit economics.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Stanford GSB — Insights",
+      "url": "https://www.gsb.stanford.edu/insights",
+      "category": "free_research",
+      "note": "Stanford Graduate School of Business research articles across 17 topic areas including finance and corporate governance. Articles distill specific academic papers into 1,000–1,500 words — useful when a section needs a citation that's more rigorous than blog commentary but less than reading the underlying paper.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Harvard Business School — Working Knowledge",
+      "url": "https://www.library.hbs.edu/working-knowledge",
+      "category": "free_research",
+      "note": "HBS faculty research summarized for a practitioner audience. Strong on management quality, capital allocation, and incentives — pairs well with Section 8 (management & alignment). The original `hbswk.hbs.edu` URL now 301-redirects here.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    },
+    {
+      "name": "Robert Shiller — Online data",
+      "url": "https://shillerdata.com/",
+      "category": "data",
+      "note": "Monthly US stock-price, dividend, earnings, and interest-rate series since January 1871, plus the cyclically-adjusted P/E (CAPE) ratio. The canonical free dataset for putting current valuation multiples in 150-year context — useful in Section 11 (what is it worth) when arguing the market overall is rich or cheap.",
+      "free_status": "free",
+      "verified": "2026-05-06"
+    }
+  ]
+}

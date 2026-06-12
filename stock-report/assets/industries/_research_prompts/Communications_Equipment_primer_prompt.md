@@ -1,0 +1,27 @@
+# Communications Equipment — Industry Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/industries/Communications_Equipment_primer.md`. The /stock-report skill loads it when a ticker is detected in this industry and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the COMMUNICATIONS EQUIPMENT industry — networking gear, telecom equipment, optical components — to read a single-company writeup intelligently and to ask the right questions when studying any business in this industry?
+
+Who I am. A long-term individual investor, not a professional analyst. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses.
+
+What I want from a primer. After reading it, I should have intuition for the cyclical capex-driven economics of networking equipment, the structurally evolving competitive landscape (Cisco's long-term loss of share to merchant silicon and white-box networking, the rise of Arista Networks in cloud-data-center networking, Huawei's role in global telecom infrastructure), and the optical-components sub-segment (Lumentum, Coherent) that drove the 2024–25 AI infrastructure boom.
+
+What to attend to particularly for Communications Equipment. The industry's defining feature is its dependency on capex cycles in adjacent industries — telecom carriers (5G build-outs), hyperscale cloud (data-center expansion), and enterprises (campus networking refreshes). Demand is therefore lumpy. (1) Enterprise and data-center networking — Cisco Systems (the dominant historical incumbent, with structural share losses to white-box networking and merchant-silicon competitors over the past decade), Arista Networks (the canonical recent share-gainer in cloud-data-center networking; 80%+ gross margins, customer concentration on the hyperscalers), Juniper Networks (HPE acquisition pending 2024–25), Extreme Networks. The structural shift from proprietary networking gear to open-network operating systems running on white-box hardware was the central disruption of the 2010s. (2) Telecom infrastructure equipment — Ericsson (Sweden-listed), Nokia (Finland-listed), Samsung (Korea-listed), Huawei (private; not investable in U.S. equity markets but materially shapes global competitive structure), ZTE. 5G capex cycle drove demand 2019–22; 6G is roughly 2027–28+ on current standards-body trajectories. (3) Optical components and modules — Lumentum, Coherent, Fabrinet (manufacturing services; structurally exposed to AI optical demand), II-VI (now Coherent post-merger). The 2024–25 AI infrastructure boom drove enormous demand for optical interconnects (800G and 1.6T transceivers), and the listed optical-component names spiked accordingly. The historical 2000 dot-com optical boom (Nortel, JDS Uniphase, Corning at peak fiber-optics excitement) is the cautionary analog — JDSU peaked around $150 in 2000 and traded in the $5–$20 range for most of the decade after. (4) Connectors and components — Amphenol, TE Connectivity, CommScope. (5) Specialty test-and-measurement — Keysight Technologies, National Instruments (acquired by Emerson 2023), Anritsu. The wisdom-tradition references for this industry are sparse — Buffett has not owned communications-equipment names; Howard Marks's writing on cycles and on the 2000 telecom bust is directly applicable; Pat Dorsey's Little Book on switching-cost and standards-based moats applies to the strongest networking franchises. The canonical caution: networking equipment is a structurally cyclical capex-dependent business where a strong incumbent (Cisco circa 2000) can lose half its share to disruptors over a decade, and where the optical-components sub-segment in particular has produced spectacular boom-bust cycles tied to telecom and now AI capex.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs. Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose.
+
+Source preferences. Howard Marks's "bubble.com" memo (January 2000) and the related dot-com cycle commentary. Dell'Oro Group and Synergy Research for networking-equipment market-share data where freely summarized. The 3GPP standards body for 5G/6G context. SemiAnalysis for AI-optical-infrastructure commentary. Damodaran's communications-equipment data. Pat Dorsey on standards-based and switching-cost moats. Specific industry trade press — Network World, Light Reading, FierceWireless.
+
+Length: 3,000–4,500 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Communications Equipment businesses in general. Don't analyze any specific company as an investment.
+```

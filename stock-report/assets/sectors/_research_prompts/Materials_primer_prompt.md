@@ -1,0 +1,29 @@
+# Materials — Sector Primer Research Prompt
+
+**How to use this file.** Run the prompt below in Claude.ai's Research mode. Save the result as `assets/sectors/Materials_primer.md`. The /stock-report skill loads it when a ticker is detected as Materials and either weaves its concepts into the company write-up or links the reader to it via `→ Learn more`.
+
+---
+
+## The prompt (copy-paste into Claude.ai's Research mode)
+
+```
+What does an individual long-term investor in the Buffett / Graham / Fisher / Munger / Marks tradition need to know about the MATERIALS sector to read a single-company writeup intelligently and to ask the right questions when studying any business in this sector?
+
+Who I am. A long-term individual investor, not a professional analyst. I read company writeups across every GICS sector, and I am green on most of them. The reading list shaping the writing I want is The Essays of Warren Buffett (Cunningham), Poor Charlie's Almanack, Common Stocks and Uncommon Profits (Fisher), The Warren Buffett Way (Hagstrom), The Investment Checklist (Shearn), Security Analysis (Graham & Dodd), The Most Important Thing (Marks). These books teach by anchoring abstractions to concrete businesses. I want a sector primer that does the same.
+
+What I want from a primer. After reading it, I should have intuition for how a Materials business actually works — the dominant economic engine, the metrics that move the value, the customer types, the typical risks, and the historical analogs that recur. When I then read a writeup of a single Materials company, the primer should arm me to ask the right questions and recognize the company-specific facts in their proper sector context.
+
+What to attend to particularly for Materials. (a) The default state: most Materials businesses are commodity producers with no pricing power, where the long-run winner is the lowest-cost producer at the bottom of the cost curve. (b) The rare exceptions where a moat does exist — aggregates and ready-mix (Vulcan, Martin Marietta, Eagle Materials, CRH, Heidelberg) where weight-to-value economics produce regional monopolies; specialty chemicals (Sherwin-Williams, RPM International, PPG) where formulation expertise and customer-process integration create switching costs; specialty packaging where customer-line tooling matters. (c) The capex super-cycle dynamic — building a smelter, mine, or chemical plant takes 5–10 years and produces a wave of supply that often arrives precisely when demand has peaked. (d) ESG/regulatory cost overlay (carbon, mining permits, hazardous-waste exposure) is real and asymmetric — it raises cost more than it raises revenue. (e) Buffett's Lubrizol acquisition (2011) and his later observation about the difficulty of commodity moats are the most direct wisdom-tradition input here; Munger on commodity businesses generally is the rest.
+
+The structure I want. Lead with the engine — what it is for any Materials business to make a dollar — using one or two exemplary companies as the worked examples. Then walk the metrics that matter (no more than 6, each defined inline using a real-company number — capacity utilization, cost-curve quartile position, EBITDA / ton, capex / depreciation ratio, return on tangible capital across the cycle, debt / EBITDA at trough). Then the typical cyclical risk pattern (capacity additions arriving at the wrong time, working-capital swings, inventory write-downs at the bottom). Then recurring historical patterns (the 2008 commodities collapse, the 2015–16 China-led mining bust, the 2020 pandemic dip and the 2021–22 commodity spike). Then the few books / writers / data sources to keep open (Yergin's The Prize for the way it teaches commodity-cycle thinking; the USGS Mineral Commodity Summaries; the World Steel Association; the AICPA's industry guides where they apply). Finally, the GICS sub-industries that matter most inside Materials, with one paragraph per sub-industry naming its dominant economic mechanic: Chemicals (commodity vs specialty), Construction Materials, Containers & Packaging, Metals & Mining (gold / iron ore / copper / aluminum each behave differently — call out which kind), Paper & Forest Products.
+
+Style I love. Concrete subjects acting on concrete objects. One specific testable example per abstract claim. Well-chosen historical analogs (Buffett on See's; Marks on 2007–08). Plain English ahead of jargon, jargon defined inline on first use. Sentence rhythm. The small earned surprise.
+
+Style I reject. Institutional sell-side templates (target prices, CAPM, beta-driven discount rates). Generic macro framing. Formulaic SWOT and pasted Porter five-forces. Numbers without narrative. Throat-clearing prose. ESG ratings imported from third-party scorers without engaging what they mean for the unit economics.
+
+Source preferences. USGS Mineral Commodity Summaries (free annual reference). World Steel Association (worldsteel.org) for industry-level data. The American Chemistry Council. Vulcan Materials and Martin Marietta investor presentations as canonical primer material on aggregates economics. Buffett's letters where Materials appears (Lubrizol commentary; cite year). Howard Marks's Oaktree memos engaging commodity cycles. Damodaran's industry data for chemicals, mining, metals (pages.stern.nyu.edu/~adamodar). Pat Dorsey on moat shapes specific to commodity industries. Mauboussin's Base Rate Book where the data covers cyclical-industry growth profiles. Where thoughtful contemporary writers cover Materials (sector substacks, mining-focused value blogs, Goehring & Rozencwajg), pull from them and cite.
+
+Length: 4,000–6,000 words. Organize however best serves the answer.
+
+Note: this is research about how to think about Materials businesses in general. Don't analyze any specific company as an investment.
+```
