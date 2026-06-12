@@ -80,7 +80,7 @@ If a primer is missing, **the build proceeds without it**. The per-section promp
 
 ### Step 3 — Draft sections 1–11
 
-For each section in order, follow the per-section prompt below. Save the draft to `_report_drafts/section_NN_<slug>.md`. The 11 Claude-written sections are the operating-manual anatomy from Part III of the wisdom-tradition research document at `compass_artifact_wf-73c18398-84f7-402f-af5c-5ab84e12a418_text_markdown.md`, plus the recommendation at the bottom (kept by user request, repositioned as output rather than frame).
+For each section in order, follow the per-section prompt below. Save the draft to `_report_drafts/section_NN_<slug>.md`. The 11 Claude-written sections are the operating-manual anatomy from Part III of the wisdom-tradition research document at `writing-tradition.md`, plus the recommendation at the bottom (kept by user request, repositioned as output rather than frame).
 
 ### Step 4 — Build per-company glossary
 
